@@ -15,50 +15,49 @@ enum Mos {
 	December,	 
 };
 
-int main() {
-	int number = -1;
+int main() {	
+	int month_number = -1;
+
+	Mos mos;
 
     setlocale(LC_ALL, "Russian");
-	while (number < 12)
+	while (true)
 	{
-	std::cout << "Введите номер месяца:" << std::endl;
-	std::cin >> number;
-
-	if (number > 12) {
-		std::cout << "Неправильный номер!" << std::endl;
-		break;
-	}
-	if (number == 0) {
+    std::cout << "Введите номер месяца:";
+	std::cin >> month_number;
+	mos = static_cast<Mos>(month_number);
+	if (mos < 0 || mos > 12) {
+		std::cout << "Неправильный номер!" << std::endl;		
 		std::cout << "До свидания" << std::endl;
 		break;
-	}
+	}	
 
-	switch (number)
+	switch (mos)
 	{
-	 case January:
+	 case 1:
 		 std::cout << "Январь" << std::endl; continue;
-	 case February:
+	 case 2:
 		 std::cout << "Февраль" << std::endl; continue;
-	 case March:
+	 case 3:
 		 std::cout << "Март" << std::endl; continue;
-	 case April:
+	 case 4:
 		 std::cout << "Апрель" << std::endl; continue;
-	 case May:
+	 case 5:
 		 std::cout << "Май" << std::endl; continue;
-	 case June:
+	 case 6:
 		 std::cout << "Июнь" << std::endl; continue;
-	 case July:
+	 case 7:
 		 std::cout << "Июль" << std::endl; continue;
-	 case August:
+	 case 8:
 		 std::cout << "Август" << std::endl; continue;
-	 case September:
+	 case 9:
 		 std::cout << "Сентябрь" << std::endl; continue;
-	 case October:
+	 case 10:
 		 std::cout << "Октябрь" << std::endl; continue;
-	 case November:
+	 case 11:
 		 std::cout << "Ноябрь" << std::endl; continue;
-	 case December:
+	 case 12:
 		 std::cout << "Декабрь" << std::endl; continue;
-	 }			
+	 }		 
    }
 }
