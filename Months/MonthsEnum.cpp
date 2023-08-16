@@ -29,34 +29,34 @@ int main() {
 	if (mos < 0 || mos > 12) {
 		std::cout << "Неправильный номер!" << std::endl;		
 		std::cout << "До свидания" << std::endl;
-		break;
+	    continue;
 	}	
 
 	switch (mos)
 	{
-	 case 1:
-		 std::cout << "Январь" << std::endl; continue;
-	 case 2:
+	 case January:
+		 std::cout << "Январь" << std::endl; 
+	 case February:
 		 std::cout << "Февраль" << std::endl; continue;
-	 case 3:
+	 case March:
 		 std::cout << "Март" << std::endl; continue;
-	 case 4:
+	 case April:
 		 std::cout << "Апрель" << std::endl; continue;
-	 case 5:
+	 case May:
 		 std::cout << "Май" << std::endl; continue;
-	 case 6:
+	 case June:
 		 std::cout << "Июнь" << std::endl; continue;
-	 case 7:
+	 case July:
 		 std::cout << "Июль" << std::endl; continue;
-	 case 8:
+	 case August:
 		 std::cout << "Август" << std::endl; continue;
-	 case 9:
+	 case September:
 		 std::cout << "Сентябрь" << std::endl; continue;
-	 case 10:
+	 case October:
 		 std::cout << "Октябрь" << std::endl; continue;
-	 case 11:
+	 case November:
 		 std::cout << "Ноябрь" << std::endl; continue;
-	 case 12:
+	 case December:
 		 std::cout << "Декабрь" << std::endl; continue;
 	 }		 
    }
